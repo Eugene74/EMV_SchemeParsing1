@@ -16,7 +16,7 @@ public class Main {
         String logFilePath;
         String log1="A.log";
         String log2="B.log";
-        System.out.println("Выбирите файл логов: A.log - 1; B.log - 2");
+        System.out.println("Выбирите файл логов: A.log - 1; B.log - 2 . Введите цифру 1 или 2");
         Scanner scanner = new Scanner(System.in);
         String logFile = scanner.nextLine();
         if (logFile.equals("1")){logFilePath = log1;}else logFilePath = log2;
@@ -97,7 +97,7 @@ public class Main {
 // без попавших в общюю мапу исключений - treeMap_exception.size())
             System.out.println("В данном лог_файле отражены "+(map_size-(treeMap_exception.size()))+" транзакции,какой из них вы хотите знать соответствие EMV_Scheme ?");
 
-            System.out.println(" Ввведите,пожалуйста, необходимый номер...");
+            System.out.println(" Ввведите,пожалуйста, необходимый номер...Введите цифру...");
             transactionNumber=scanner.nextLine();
             int transactNum_parse = Integer.parseInt(transactionNumber)-1;
             System.out.println("Введите параметр для проверки соответствия EMV_Scheme: (Например: (2.1 or 2.2) или (2.05) или (Advance) ...или что угодно  - без скобок)");
