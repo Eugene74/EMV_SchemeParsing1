@@ -80,8 +80,6 @@ public class Main {
                 boolean c = checkTransWithoutScheme(startSearch, endSearch, logString); // работаю с каждым по очереди из списка
                     if (c) {
                     timestampString=getTimestamp_start(starts.get(i),treeMap_timestamps, logString);
-                    /*int t=starts.get(i);
-                    System.out.println(unted_map_begin.get(t)+" "+timestampString);*/
                     emv_schemeString= searchNearestObject(starts.get(i),treeMap_schemes, logString);
                     //System.out.println(timestampString+" "+emv_schemeString);
                     String scheme_param = extractSchemeParam(emv_schemeString);
